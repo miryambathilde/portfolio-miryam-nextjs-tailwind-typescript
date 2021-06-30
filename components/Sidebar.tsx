@@ -37,7 +37,7 @@ const Sidebar = () => {
 
       {/* //social icons */}
       {/* color rosa? */}
-      <div className="flex justify-around my-5 text-green-500 w-9/12 md:w-full mx-auto">
+      <div className="flex justify-around my-5 text-green-400 w-9/12 md:w-full mx-auto">
         <a href="https://github.com/miryambathilde" target="blank">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
@@ -59,8 +59,8 @@ const Sidebar = () => {
         <p className='my-2'>+34 664 405 691</p>
       </div>
       {/* email button */}
-      <button className="bg-gradient-to-r from-green-500 to-blue-500 w-8/12 rounded-full py-2 px-5 text-white my-2" >Contactar por email</button>
-      <button className="bg-gradient-to-r from-green-500 to-blue-500 w-8/12 rounded-full py-2 px-5 text-white my-2" >Cambiar el tema</button>
+      <button className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2" >Contactar por email</button>
+      <button className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2" >Cambiar el tema</button>
     </div>
   );
 };

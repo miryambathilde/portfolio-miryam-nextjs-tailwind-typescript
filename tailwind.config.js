@@ -12,7 +12,17 @@ module.exports = {
       colors: {
         green: {
           DEFAULT: '#34D399',
+        },
+        lightblue: {
+          DEFAULT: '#77A1D3',
+        },
+        lightgreen: {
+          DEFAULT: '#79CBCA',
+        },
+        lightpink: {
+          DEFAULT: '#E684AE',
         }
+        
       }
     },
   },
