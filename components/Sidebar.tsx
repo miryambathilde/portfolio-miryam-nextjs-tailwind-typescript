@@ -66,7 +66,7 @@ const Sidebar = () => {
         className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none"
         onClick={() => window.open("mailto:mbathilde@gmail.com")}
       >
-        Contactar por email
+        Enviar email
       </button>
       <button className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2">
         Cambiar el tema
