@@ -15,10 +15,10 @@ const Sidebar = () => {
         //className="w-32 h-32 mx-auto rounded-full"
       />
       <h3 className="my-4 text-3xl font-medium tracking-wider font-kaushan">
-        <span>Miryam</span>
+        <span className="text-green-500">Miryam</span>
         <br />
         Bathilde
-        <span> Crevillen</span>
+        <span className="text-green-500"> Crevillen</span>
       </h3>
       {/* //color gris? // */}
       <p className="px-2 py-1 my-3 bg-gray-200 rounded-full">
@@ -37,7 +37,7 @@ const Sidebar = () => {
 
       {/* //social icons */}
       {/* color rosa? */}
-      <div className="flex justify-around my-5 text-green-400 w-9/12 md:w-full mx-auto">
+      <div className="flex justify-around my-5 text-green-500 w-9/12 md:w-full mx-auto">
         <a href="https://github.com/miryambathilde" target="blank">
           <AiFillGithub className="w-8 h-8 cursor-pointer" />
         </a>
@@ -50,17 +50,27 @@ const Sidebar = () => {
       </div>
       {/* address */}
       {/* COLOR GRIS? */}
-      <div className="my-5 py-4 bg-gray-200" style={{marginLeft: '-1rem', marginRight: '-1rem'}}>
+      <div
+        className="my-5 py-4 bg-gray-200"
+        style={{ marginLeft: "-1rem", marginRight: "-1rem" }}
+      >
         <div className="flex items-center justify-center space-x-2">
           <GoLocation className="h-5" />
           <span>Sevilla, España</span>
         </div>
-        <p className='my-2'>mbathilde@gmail.com</p>
-        <p className='my-2'>+34 664 405 691</p>
+        <p className="my-2">mbathilde@gmail.com</p>
+        <p className="my-2">+34 664 405 691</p>
       </div>
       {/* email button */}
-      <button className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2" >Contactar por email</button>
-      <button className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2" >Cambiar el tema</button>
+      <button
+        className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2 focus:outline-none"
+        onClick={() => window.open("mailto:mbathilde@gmail.com")}
+      >
+        Contactar por email
+      </button>
+      <button className="bg-gradient-to-r from-green-400 to-blue-500  w-8/12 rounded-full py-2 px-5 text-white my-2">
+        Cambiar el tema
+      </button>
     </div>
   );
 };
