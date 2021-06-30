@@ -6,6 +6,7 @@ module.exports = {
     fontFamily: {
       /* sans: ["ui-sans-serif", "system-ui"], */
       kaushan: ["Kaushan Script"],
+      lato: ["Lato"],
     },
     extend: {
       /* custome colores */
