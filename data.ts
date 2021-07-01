@@ -1,22 +1,33 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaServer } from "react-icons/fa";
-import { IProject, Service, Skill } from "./types";
-
 import { BsCircleFill } from "react-icons/bs";
-import { iService } from "./type";
+import { Service, Skill } from "./type";
+import { AiOutlineApi, AiOutlineAntDesign } from "react-icons/ai";
 
-export const services: iService[] = [
+export const services: Service[] = [
   {
     Icon: RiComputerLine,
     title: "Desarrollo Frontend",
     about:
-      "Puedo construir una SPA bonita y funcional, usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b> ",
+      "Puedo construir una SPA, Single Page Application, bonita y funcional usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b>. ",
   },
   {
     Icon: FaServer,
     title: "Desarrollo Backend",
     about:
-      "Manejo de BBDD, servidores y API usando <b>Express </b> & y otros frameworks populares",
+      "Manejo de BBDD, servidores y API usando <b>Express</b> y otros frameworks populares.",
+  },
+  {
+    Icon: AiOutlineApi,
+    title: "Desarrollo de API",
+    about:
+      "Puedo desarrollar una API REST robusta usando <b>Node API</b>.",
+  },
+  {
+    Icon: AiOutlineAntDesign,
+    title: "UI/UX",
+    about:
+      "Desarrollo de interfaces gráficas de usuario, <b>accesible para personas con discapacidad, orientado al SEO</b> y totalmente <b>responsive</b>.",
   },
 ];
 
@@ -26,27 +37,107 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "HTML5, CSS3, SCSS, SASS, Responsive Web Design",
-    level: "85",
+    level: "95%",
   },
   {
     Icon: BsCircleFill,
-    name: "Bootstrap 4, Tailwind CSS, Materialize, Angular Material",
-    level: "90",
+    name: "Bootstrap",
+    level: "90%",
   },
   {
     Icon: BsCircleFill,
-    name: "Javascript & Typescript",
-    level: "90",
+    name: "Tailwind CSS",
+    level: "90%",
   },
   {
     Icon: BsCircleFill,
-    name: "Vue, React, Angular",
-    level: "90",
+    name: "Materialize",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Angular Material",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Javascript",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Typescript",
+    level: "95%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Vue",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "React",
+    level: "95%",
   },
   {
     Icon: BsCircleFill,
     name: "Next JS",
-    level: "80",
+    level: "85%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Angular",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Node JS",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "MySQL",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "MongoDB",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "UX/UI",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Git-Github",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Jenkins",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Docker",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Kubernetes",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Metodologías ágiles",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "SCRUM",
+    level: "90%",
   },
 ];
 

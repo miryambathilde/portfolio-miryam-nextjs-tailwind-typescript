@@ -1,7 +1,7 @@
 import { FunctionComponent } from "react";
-import { iService } from "../type";
+import { Service } from "../type";
 
-const ServiceCard: FunctionComponent<{ service: iService }> = ({
+const ServiceCard: FunctionComponent<{ service: Service }> = ({
 	service: { Icon, about, title },
 }) => {
 
@@ -20,6 +20,7 @@ const ServiceCard: FunctionComponent<{ service: iService }> = ({
       <p dangerouslySetInnerHTML={createMarkup()}/>
     </div>
   </div>
+  
   )
 
 };
