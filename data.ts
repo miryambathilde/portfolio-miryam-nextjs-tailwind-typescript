@@ -10,13 +10,13 @@ export const services: iService[] = [
     Icon: RiComputerLine,
     title: "Desarrollo Frontend",
     about:
-      "Puedo construir una SPA bonita y funcional usando <b> HTML</b>,<b>CSS</b> and <b>React.js</b> ",
+      "Puedo construir una SPA (Single Page Application) bonita y funcional usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b> ",
   },
   {
     Icon: FaServer,
     title: "Desarrollo Backend",
     about:
-      "Manejo de bases de datos, servidores y API usando <b>Express </b> & y otros frameworks populares",
+      "Manejo de BBDD, servidores y API usando <b>Express </b> & y otros frameworks populares",
   },
 ];
 
