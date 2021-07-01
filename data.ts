@@ -36,7 +36,17 @@ export const services: Service[] = [
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
-    name: "HTML5, CSS3, SCSS, SASS, Responsive Web Design",
+    name: "HTML5",
+    level: "95%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "CSS3, SCSS, SASS",
+    level: "95%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Responsive Design",
     level: "95%",
   },
   {
@@ -140,7 +150,7 @@ export const tools: Skill[] = [
   },
   {
     Icon: BsCircleFill,
-    name: "Metodologías ágiles",
+    name: "Agile Skills",
     level: "90%",
   },
   {
