@@ -10,7 +10,7 @@ export const services: iService[] = [
     Icon: RiComputerLine,
     title: "Desarrollo Frontend",
     about:
-      "Puedo construir una SPA (Single Page Application) bonita y funcional usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b> ",
+      "Puedo construir una SPA bonita y funcional, usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b> ",
   },
   {
     Icon: FaServer,
