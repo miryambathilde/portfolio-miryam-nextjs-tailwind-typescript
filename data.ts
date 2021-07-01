@@ -32,13 +32,37 @@ export const services: Service[] = [
 ];
 
 /* TODO */
-/* LANGUAGES and TOOLS */
+/* LANGUAGES*/
 export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "HTML5, CSS3, SCSS, SASS, Responsive Web Design",
     level: "95%",
   },
+  {
+    Icon: BsCircleFill,
+    name: "Javascript",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Typescript",
+    level: "95%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "Bases de datos",
+    level: "90%",
+  },
+  {
+    Icon: BsCircleFill,
+    name: "UX/UI",
+    level: "90%",
+  },
+];
+
+/* TOOLS */
+export const tools: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "Bootstrap",
@@ -58,16 +82,6 @@ export const languages: Skill[] = [
     Icon: BsCircleFill,
     name: "Angular Material",
     level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Javascript",
-    level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Typescript",
-    level: "95%",
   },
   {
     Icon: BsCircleFill,
@@ -102,11 +116,6 @@ export const languages: Skill[] = [
   {
     Icon: BsCircleFill,
     name: "MongoDB",
-    level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "UX/UI",
     level: "90%",
   },
   {
