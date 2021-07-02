@@ -54,8 +54,7 @@ const resume = () => {
 						))}
 					</div>
 				</div>
-			</div>
-      <div>
+				<div>
 					<h5 className='my-3 text-2xl font-bold'>Herramientas & Frameworks</h5>
 					<div className='my-2'>
 						{tools.map((tool) => (
@@ -63,6 +62,7 @@ const resume = () => {
 						))}
 					</div>
 				</div>
+			</div>
 		</div>
 	);
 };

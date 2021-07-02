@@ -1,8 +1,11 @@
 import { RiComputerLine } from "react-icons/ri";
-import { FaServer } from "react-icons/fa";
-import { BsCircleFill } from "react-icons/bs";
+import { FaDatabase, FaJenkins, FaServer } from "react-icons/fa";
 import { Service, Skill } from "./type";
 import { AiOutlineApi, AiOutlineAntDesign } from "react-icons/ai";
+import {SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiVueDotJs, SiReact, SiAngular, SiMysql, SiMongodb, SiNodeDotJs, SiBootstrap, SiTailwindcss, SiNextDotJs, SiGithub, SiGit, SiJenkins, SiDocker, SiKubernetes} from "react-icons/si";
+import {GrMysql} from 'react-icons/gr';
+import {DiMaterializecss, DiScrum} from 'react-icons/di'
+
 
 export const services: Service[] = [
   {
@@ -35,38 +38,63 @@ export const services: Service[] = [
 /* LANGUAGES*/
 export const languages: Skill[] = [
   {
-    Icon: BsCircleFill,
+    Icon: SiHtml5,
     name: "HTML5",
     level: "95%",
   },
   {
-    Icon: BsCircleFill,
-    name: "CSS3, SCSS, SASS",
+    Icon: SiCss3,
+    name: "CSS3",
     level: "95%",
   },
   {
-    Icon: BsCircleFill,
-    name: "Responsive Design",
+    Icon: SiSass,
+    name: "SASS, SCSS",
     level: "95%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiJavascript,
     name: "Javascript",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiTypescript,
     name: "Typescript",
     level: "95%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiVueDotJs,
+    name: "Vue",
+    level: "90%",
+  },
+  {
+    Icon: SiReact,
+    name: "React",
+    level: "95%",
+  },
+  {
+    Icon: SiAngular,
+    name: "Angular",
+    level: "90%",
+  },
+  {
+    Icon: FaDatabase,
     name: "Bases de datos",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
-    name: "UX/UI",
+    Icon: GrMysql,
+    name: "MySQL",
+    level: "90%",
+  },
+  {
+    Icon: SiMongodb,
+    name: "MongoDB",
+    level: "90%",
+  },
+  {
+    Icon: SiNodeDotJs,
+    name: "Node JS",
     level: "90%",
   },
 ];
@@ -74,87 +102,62 @@ export const languages: Skill[] = [
 /* TOOLS */
 export const tools: Skill[] = [
   {
-    Icon: BsCircleFill,
+    Icon: SiBootstrap,
     name: "Bootstrap",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiTailwindcss,
     name: "Tailwind CSS",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: DiMaterializecss,
     name: "Materialize",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiAngular,
     name: "Angular Material",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
-    name: "Vue",
-    level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "React",
-    level: "95%",
-  },
-  {
-    Icon: BsCircleFill,
+    Icon: SiNextDotJs,
     name: "Next JS",
     level: "85%",
   },
   {
-    Icon: BsCircleFill,
-    name: "Angular",
+    Icon: SiGit,
+    name: "Git",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
-    name: "Node JS",
+    Icon: SiGithub,
+    name: "Github",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
-    name: "MySQL",
-    level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "MongoDB",
-    level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
-    name: "Git-Github",
-    level: "90%",
-  },
-  {
-    Icon: BsCircleFill,
+    Icon: FaJenkins,
     name: "Jenkins",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiDocker,
     name: "Docker",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: SiKubernetes,
     name: "Kubernetes",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: DiScrum,
     name: "Agile Skills",
     level: "90%",
   },
   {
-    Icon: BsCircleFill,
+    Icon: DiScrum,
     name: "SCRUM",
     level: "90%",
   },
