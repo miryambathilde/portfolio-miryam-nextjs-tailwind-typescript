@@ -5,7 +5,7 @@ import { services } from "../data";
 
 const index = () => {
 	return (
-		<div className='flex flex-col flex-grow px-6 pt-1'>
+		<div className='flex flex-col flex-grow px-6 pt-1 dark:bg-gray-700 dark:text-gray-200'>
 			<h5 className='my-3 font-medium'>
 				Soy Miryam, desarrolladora FullStack, apasionada y amante del diseño y
 				la maquetación web.
@@ -16,12 +16,12 @@ const index = () => {
 			</h5>
 	
 			<div
-				className='flex-grow p-4 mt-5 bg-gray-300 dark:bg-gray-500'
+				className='flex-grow p-4 mt-5 bg-gray-300 dark:bg-gray-700'
 				style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}>
 				<h6 className='my-3 text-xl font-bold dark:text-white'>Servicios</h6>
 				<div className='grid gap-6 lg:grid-cols-1'>
 					{services.map((service) => (
-						<div className='bg-gray-100 lg:col-span-1 rounded-xl'>
+						<div className='bg-gray-100 lg:col-span-1 rounded-xl dark:bg-gray-600 dark:text-gray-100'>
 							<ServiceCard service={service} />
 						</div>
 					))}
