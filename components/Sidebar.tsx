@@ -19,10 +19,10 @@ const Sidebar = () => {
 				className='w-40 h-40 mx-auto rounded-md'
 			/>
 			<h3 className='my-4 text-3xl italic font-medium font-style: font-lato'>
-				<span className='text-green-500'>Miryam</span>
+				<span className='text-green-500 dark:text-green-400'>Miryam</span>
 				<br />
 				<span className='text-gray-600 dark:text-gray-100'>Bathilde</span>
-				<span className='text-green-500'> Crevillen</span>
+				<span className='text-green-500 dark:text-green-400'> Crevillen</span>
 			</h3>
 
 			<p className='px-2 py-1 my-3 bg-blue-200 rounded-full'>
@@ -40,7 +40,7 @@ const Sidebar = () => {
 
 			{/* //social icons */}
 
-			<div className='flex justify-around w-9/12 mx-auto my-5 text-green-500 dark:text-white md:w-full'>
+			<div className='flex justify-around w-9/12 mx-auto my-5 text-green-500 dark:text-gray-50 md:w-full'>
 				<a href='https://github.com/miryambathilde' target='blank'>
 					<AiFillGithub className='w-8 h-8 cursor-pointer' />
 				</a>
