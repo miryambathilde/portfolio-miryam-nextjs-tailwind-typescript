@@ -1,8 +1,7 @@
 module.exports = {
   purge: ["./pages/**/*.tsx", "./components/**/*.tsx"],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
-    /* fonts sans + kaushan de google fonts */
     fontFamily: {
       /* sans: ["ui-sans-serif", "system-ui"], */
       kaushan: ["Kaushan Script"],

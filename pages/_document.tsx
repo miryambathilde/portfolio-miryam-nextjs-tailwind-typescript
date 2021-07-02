@@ -4,7 +4,7 @@ class MyDocument extends Document {
   
   render() {
     return (
-      <Html>
+      <Html lang="es" class='dark'>
         <Head>
           {/* google fonts Kaushan Script */}
           <link rel="preconnect" href="https://fonts.gstatic.com" />
