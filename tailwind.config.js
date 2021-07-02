@@ -21,6 +21,13 @@ module.exports = {
         },
         lightpink: {
           DEFAULT: '#E684AE',
+        },
+        dark: {
+          DEFAULT: '#1D1D1E',
+          900: '#111827',
+          800: '##1F2937',
+          700: '##374151',
+          600: '#4B5563',
         }
         
       }

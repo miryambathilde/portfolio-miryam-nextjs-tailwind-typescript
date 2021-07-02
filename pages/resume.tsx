@@ -3,16 +3,18 @@ import { languages, tools } from "../data";
 
 const resume = () => {
 	return (
-		<div className='px-6 py-2'>
+		<div className='px-6 py-2 bg-gray-200 dark:bg-gray-300'>
 			{/* //education & experience// */}
 			<div className='grid gap-10 md:grid-cols-2 xl:grid-cols-2'>
 				<div>
-					<h5 className='my-3 text-2xl font-bold text-gray-600'>Estudios</h5>
+					<h3 className='text-2xl font-bold text-gray-800 my-7'>
+						Estudios
+					</h3>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>
-						Codehouse Academy (2021)
-						</h5>
-						<p className='font-semibold'>Bootcamp Full Stack Web Developer: Opensource</p>
+						<h5 className='my-2 text-xl font-bold'>Codehouse Academy (2021)</h5>
+						<p className='font-semibold'>
+							Bootcamp Full Stack Web Developer: Opensource
+						</p>
 						<p className='my-3 text-justify'>
 							En el Bootcamp de Fullstack Web Developer Opensource, he adquirido
 							todos los conocimientos necesarios para el desarrollo completo de
@@ -24,10 +26,10 @@ const resume = () => {
 						</p>
 					</div>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>
-						Pixelpro (2020 - 2021)
-						</h5>
-						<p className='font-semibold'>Estudiante carrera FullStack Developer</p>
+						<h5 className='my-2 text-xl font-bold'>Pixelpro (2020 - 2021)</h5>
+						<p className='font-semibold'>
+							Estudiante carrera FullStack Developer
+						</p>
 						<p className='my-3'>
 							HTML5, CSS3, Javascript avanzado, ECMAScript, Angular, React,
 							Angular con NodeJS.
@@ -35,42 +37,45 @@ const resume = () => {
 					</div>
 					<div>
 						<h5 className='my-2 text-xl font-bold'>
-						Bottega Career Services (2020)
+							Bottega Career Services (2020)
 						</h5>
-						<p className='font-semibold'>Digital Literacy - Coding Foundations</p>
-						<p className='my-3 text-justify'>
-							1. - Fundamentos digitales y tendencias de la industria
-							tecnológica Conocimiento del vocabulario y conceptos básicos de
-							alfabetización digital. 
-							<br />
-							2. - Fundamentos HTML y CSS Los lenguajes
-							HTML y CSS para programar sitios web básicos que integran el uso
-							de estilos. 
-							<br />
-							3. - Fundamento de JavaScript Aprender e implementar
-							JavaScript para agregar características móviles a proyectos de
-							programación básicos. Fundamentos de la línea de comandos Cómo
-							usar el terminal y la línea de comandos para completar las tareas
-							de programación asignadas. Habilidades de desarrollo Entender las
-							tendencias actuales en la industria tecnológica y las posibles
-							opciones profesionales asociadas. Identificar estrategias de
-							gestión para liderar con eficacia proyectos, reuniones,
-							presentaciones y actividades asociadas en entornos de la industria
-							tecnológica. Reconocer las competencias de trabajo en equipo que
-							promueven la comunicación productiva, la colaboración y la
-							negociación.
+						<p className='font-semibold'>
+							Digital Literacy - Coding Foundations
+						</p>
+						<p className='my-2 text-justify'>
+							1. Fundamentos digitales y tendencias de la industria tecnológica
+							Conocimiento del vocabulario y conceptos básicos de alfabetización
+							digital.
+						</p>
+						<p className='my-2 text-justify'>
+							2. Fundamentos HTML y CSS Los lenguajes HTML y CSS para programar
+							sitios web básicos que integran el uso de estilos.
+						</p>
+
+						<p className='my-2 text-justify'>
+							3. Fundamento de JavaScript Aprender e implementar JavaScript para
+							agregar características móviles a proyectos de programación
+							básicos. Fundamentos de la línea de comandos Cómo usar el terminal
+							y la línea de comandos para completar las tareas de programación
+							asignadas. Habilidades de desarrollo Entender las tendencias
+							actuales en la industria tecnológica y las posibles opciones
+							profesionales asociadas. Identificar estrategias de gestión para
+							liderar con eficacia proyectos, reuniones, presentaciones y
+							actividades asociadas en entornos de la industria tecnológica.
+							Reconocer las competencias de trabajo en equipo que promueven la
+							comunicación productiva, la colaboración y la negociación.
 						</p>
 					</div>
 				</div>
 				<div>
-					<h5 className='my-3 text-2xl font-bold text-gray-600'>
+					<h4 className='text-2xl font-bold text-gray-800 my-7'>
 						Experiencia profesional
-					</h5>
+					</h4>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>
-						Codehouse Academy (2021)
-						</h5>
-						<p className='font-semibold'>Presentación del proyecto final de Bootcamp</p>
+						<h5 className='my-2 text-xl font-bold'>Codehouse Academy (2021)</h5>
+						<p className='font-semibold'>
+							Presentación del proyecto final de Bootcamp
+						</p>
 						<p className='my-3 text-justify'>
 							Diseño, planificación e implementación de un proyecto real.
 							<br />
@@ -81,13 +86,23 @@ const resume = () => {
 							Presentación del proyecto final ante CodeHouse y la empresa.
 						</p>
 					</div>
+					<div>
+						<h5 className='my-2 text-xl font-bold'>Pixelpro (2020 - 2021)</h5>
+						<p className='font-semibold'>
+							Estudiante carrera FullStack Developer
+						</p>
+						<p className='my-3'>
+							HTML5, CSS3, Javascript avanzado, ECMAScript, Angular, React,
+							Angular con NodeJS.
+						</p>
+					</div>
 				</div>
 			</div>
 			{/* languages and tools */}
 
 			<div className='grid gap-6 md:grid-cols-2'>
 				<div>
-					<h5 className='my-4 text-2xl font-bold text-gray-600'>Lenguajes</h5>
+					<h5 className='my-3 text-2xl font-bold text-gray-800'>Lenguajes</h5>
 					<div className='my-4'>
 						{languages.map((language) => (
 							<Bar data={language} key={language.name} />
@@ -95,7 +110,7 @@ const resume = () => {
 					</div>
 				</div>
 				<div>
-					<h5 className='my-4 text-2xl font-bold text-gray-600'>
+					<h5 className='my-3 text-2xl font-bold text-gray-800'>
 						Herramientas & Frameworks
 					</h5>
 					<div className='my-4'>

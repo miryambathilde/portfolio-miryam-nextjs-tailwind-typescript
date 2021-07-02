@@ -21,7 +21,7 @@ const Sidebar = () => {
 			<h3 className='my-4 text-3xl italic font-medium font-style: font-lato'>
 				<span className='text-green-500'>Miryam</span>
 				<br />
-				Bathilde
+				<span className='text-gray-600 dark:text-gray-100'>Bathilde</span>
 				<span className='text-green-500'> Crevillen</span>
 			</h3>
 
@@ -40,7 +40,7 @@ const Sidebar = () => {
 
 			{/* //social icons */}
 
-			<div className='flex justify-around w-9/12 mx-auto my-5 text-green-500 md:w-full'>
+			<div className='flex justify-around w-9/12 mx-auto my-5 text-green-500 dark:text-white md:w-full'>
 				<a href='https://github.com/miryambathilde' target='blank'>
 					<AiFillGithub className='w-8 h-8 cursor-pointer' />
 				</a>
@@ -53,7 +53,7 @@ const Sidebar = () => {
 
 			{/* address */}
 			<div
-				className='py-4 my-5 bg-gradient-to-r from-green-200 via-blue-100 to-blue-200'
+				className='py-4 my-5 bg-gray-300 dark:bg-gray-600 dark:text-gray-50'
 				style={{ marginLeft: "-1rem", marginRight: "-1rem" }}>
 				<div className='flex items-center justify-center space-x-2'>
 					<GoLocation className='h-5' />
@@ -70,7 +70,7 @@ const Sidebar = () => {
 				Enviar email
 			</button>
 			<button onClick={changeTheme} className='w-8/12 px-5 py-2 my-2 text-white rounded-full bg-gradient-to-r from-green-400 to-blue-500'>
-				Tema oscuro
+				Cambiar tema
 			</button>
 		</div>
 	);

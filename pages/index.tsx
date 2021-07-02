@@ -16,12 +16,12 @@ const index = () => {
 			</h5>
 	
 			<div
-				className='flex-grow p-4 mt-5 bg-gray-400'
+				className='flex-grow p-4 mt-5 bg-gray-300 dark:bg-gray-500'
 				style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}>
-				<h6 className='my-3 text-xl font-bold'>Servicios</h6>
+				<h6 className='my-3 text-xl font-bold dark:text-white'>Servicios</h6>
 				<div className='grid gap-6 lg:grid-cols-1'>
 					{services.map((service) => (
-						<div className='bg-gray-200 lg:col-span-1 rounded-xl'>
+						<div className='bg-gray-100 lg:col-span-1 rounded-xl'>
 							<ServiceCard service={service} />
 						</div>
 					))}
