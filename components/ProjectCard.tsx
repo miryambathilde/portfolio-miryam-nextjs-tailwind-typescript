@@ -25,25 +25,18 @@ const ProjectCard: FunctionComponent<{
 			{showDetail && (
         <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-gray-800 bg-gray-200 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-gray-500">
           <div>
-            {/* <img src={image_path} alt={name} /> */}
+            <img src={image_path} alt={name} />
 
-            {/* <Image
-              src={image_path}
-              alt={name}
-              layout="responsive"
-              height="150"
-              width="300"
-            /> */}
             <div className="flex justify-center my-4 space-x-3">
               <a
-                href={github_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg text-gray-100 bg-gray-500 dark:bg-gray-300 dark:text-gray-700"
+                target="_blank" href={github_url}  
+                className="flex items-center px-4 py-2 space-x-3 text-lg text-gray-100 bg-gray-500 rounded-sm dark:bg-gray-300 dark:text-gray-700"
               >
                 <AiFillGithub /> <span>Github</span>
               </a>
               <a
-                href={deployed_url}
-                className="flex items-center px-4 py-2 space-x-3 text-lg text-gray-100 bg-gray-500 dark:bg-gray-300 dark:text-gray-700"
+                target="_blank" href={deployed_url}                   
+                className="flex items-center px-4 py-2 space-x-3 text-lg text-gray-100 bg-gray-500 rounded-sm dark:bg-gray-300 dark:text-gray-700"
               >
                 <AiFillProject /> <span>Project</span>
               </a>
@@ -58,7 +51,7 @@ const ProjectCard: FunctionComponent<{
               {key_techs.map((tech) => (
                 <span
                   key={tech}
-                  className="px-2 py-1 my-1 text-gray-100 bg-gray-500 dark:bg-gray-200 dark:text-gray-700 rounde-sm"
+                  className="px-2 py-1 my-1 text-gray-100 bg-gray-500 rounded-sm dark:bg-gray-200 dark:text-gray-700"
                 >
                   {tech}
                 </span>
