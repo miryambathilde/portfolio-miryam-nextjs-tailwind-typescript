@@ -2,13 +2,23 @@ import { IconType } from "react-icons";
 
 //interface is the shape of the object
 export interface Service {
-  title: string,
-  about: string,
-  Icon: IconType
+	title: string;
+	about: string;
+	Icon: IconType;
 }
 
 export interface Skill {
-  name:string, 
-  level:string,
-  Icon: IconType
+	name: string;
+	level: string;
+	Icon: IconType;
+}
+
+export interface Project {
+	name: string;
+	description: string;
+	image_path: string;
+	deploy_ur: string;
+	github_url: string;
+	category: string[];
+	key_techs: string[];
 }
