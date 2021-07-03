@@ -221,6 +221,6 @@ export const projects: Project[] = [
 		github_url:
 			"https://github.com/miryambathilde/cloud-data-project-html-css-flex-grid-animations",
 		category: ["html", "css"],
-		key_techs: ["Html", "CSS", "Flexbox", "Grid", "Animaciones"],
+		key_techs: ["Html", "CSS", "Flexbox", "Grid", "Animations"],
 	},
 ];
