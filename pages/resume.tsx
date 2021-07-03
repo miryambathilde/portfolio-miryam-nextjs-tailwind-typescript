@@ -3,19 +3,19 @@ import { languages, tools } from "../data";
 
 const resume = () => {
 	return (
-		<div className='px-6 py-2 bg-gray-200 dark:bg-gray-300'>
+		<div className='px-6 py-2 bg-gray-200 dark:bg-gray-700'>
 			{/* //education & experience// */}
 			<div className='grid gap-10 md:grid-cols-2 xl:grid-cols-2'>
 				<div>
-					<h3 className='text-2xl font-bold text-gray-800 my-7'>
+					<h3 className='text-2xl font-bold text-gray-800 dark:text-white my-7'>
 						Estudios
 					</h3>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>Codehouse Academy (2021)</h5>
-						<p className='font-semibold'>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>Codehouse Academy (2021)</h5>
+						<p className='font-semibold dark:text-gray-300'>
 							Bootcamp Full Stack Web Developer: Opensource
 						</p>
-						<p className='my-3 text-justify'>
+						<p className='my-3 text-justify dark:text-gray-300'>
 							En el Bootcamp de Fullstack Web Developer Opensource, he adquirido
 							todos los conocimientos necesarios para el desarrollo completo de
 							una web, desde la parte que visualiza el cliente hasta la que
@@ -26,33 +26,33 @@ const resume = () => {
 						</p>
 					</div>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>Pixelpro (2020 - 2021)</h5>
-						<p className='font-semibold'>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>Pixelpro (2020 - 2021)</h5>
+						<p className='font-semibold dark:text-gray-300'>
 							Estudiante carrera FullStack Developer
 						</p>
-						<p className='my-3'>
+						<p className='my-3 dark:text-gray-300'>
 							HTML5, CSS3, Javascript avanzado, ECMAScript, Angular, React,
 							Angular con NodeJS.
 						</p>
 					</div>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>
 							Bottega Career Services (2020)
 						</h5>
-						<p className='font-semibold'>
+						<p className='font-semibold dark:text-gray-300'>
 							Digital Literacy - Coding Foundations
 						</p>
-						<p className='my-2 text-justify'>
+						<p className='my-2 text-justify dark:text-gray-300'>
 							1. Fundamentos digitales y tendencias de la industria tecnológica
 							Conocimiento del vocabulario y conceptos básicos de alfabetización
 							digital.
 						</p>
-						<p className='my-2 text-justify'>
+						<p className='my-2 text-justify dark:text-gray-300'>
 							2. Fundamentos HTML y CSS Los lenguajes HTML y CSS para programar
 							sitios web básicos que integran el uso de estilos.
 						</p>
 
-						<p className='my-2 text-justify'>
+						<p className='my-2 text-justify dark:text-gray-300'>
 							3. Fundamento de JavaScript Aprender e implementar JavaScript para
 							agregar características móviles a proyectos de programación
 							básicos. Fundamentos de la línea de comandos Cómo usar el terminal
@@ -68,15 +68,15 @@ const resume = () => {
 					</div>
 				</div>
 				<div>
-					<h4 className='text-2xl font-bold text-gray-800 my-7'>
+					<h4 className='text-2xl font-bold text-gray-800 dark:text-white my-7'>
 						Experiencia profesional
 					</h4>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>Codehouse Academy (2021)</h5>
-						<p className='font-semibold'>
+						<h5 className='my-2 text-xl font-bold text-justify dark:text-gray-300'>Codehouse Academy (2021)</h5>
+						<p className='font-semibold text-justify dark:text-gray-300'>
 							Presentación del proyecto final de Bootcamp
 						</p>
-						<p className='my-3 text-justify'>
+						<p className='my-3 text-justify dark:text-gray-300'>
 							Diseño, planificación e implementación de un proyecto real.
 							<br />
 							Aplicación de metodologías ágiles en el proyecto.
@@ -87,11 +87,11 @@ const resume = () => {
 						</p>
 					</div>
 					<div>
-						<h5 className='my-2 text-xl font-bold'>Pixelpro (2020 - 2021)</h5>
-						<p className='font-semibold'>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>Pixelpro (2020 - 2021)</h5>
+						<p className='font-semibold text-justify dark:text-gray-300'>
 							Estudiante carrera FullStack Developer
 						</p>
-						<p className='my-3'>
+						<p className='my-3 text-justify dark:text-gray-300'>
 							HTML5, CSS3, Javascript avanzado, ECMAScript, Angular, React,
 							Angular con NodeJS.
 						</p>
@@ -102,7 +102,7 @@ const resume = () => {
 
 			<div className='grid gap-6 md:grid-cols-2'>
 				<div>
-					<h5 className='my-3 text-2xl font-bold text-gray-800'>Lenguajes</h5>
+					<h5 className='my-3 text-2xl font-bold text-gray-800 dark:text-gray-100'>Lenguajes</h5>
 					<div className='my-4'>
 						{languages.map((language) => (
 							<Bar data={language} key={language.name} />
@@ -110,12 +110,12 @@ const resume = () => {
 					</div>
 				</div>
 				<div>
-					<h5 className='my-3 text-2xl font-bold text-gray-800'>
+					<h5 className='my-3 text-2xl font-bold text-gray-800 dark:text-gray-100'>
 						Herramientas & Frameworks
 					</h5>
-					<div className='my-4'>
+					<div className='my-4 dark:text-gray-100'>
 						{tools.map((tool) => (
-							<Bar data={tool} key={tool.name} />
+							<Bar data={tool} key={tool.name}/>
 						))}
 					</div>
 				</div>

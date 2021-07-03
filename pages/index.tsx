@@ -14,11 +14,11 @@ const index = () => {
 				durante mis estudios, he ido desarrollando aplicaciones y páginas web
 				para poner en práctica todos los conocimientos adquiridos.
 			</h5>
-	
+			<div></div>
 			<div
-				className='flex-grow p-4 mt-5 bg-gray-300 dark:bg-gray-700'
+				className='flex-grow p-4 mt-5 bg-gray-300 dark:bg-gray-700 '
 				style={{ marginLeft: "-1.5rem", marginRight: "-1.5rem" }}>
-				<h6 className='my-3 text-xl font-bold dark:text-white'>Servicios</h6>
+				<h6 className='my-3 text-xl font-bold dark:text-gray-100'>Servicios</h6>
 				<div className='grid gap-6 lg:grid-cols-1'>
 					{services.map((service) => (
 						<div className='bg-gray-100 lg:col-span-1 rounded-xl dark:bg-gray-600 dark:text-gray-100'>

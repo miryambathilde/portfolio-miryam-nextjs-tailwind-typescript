@@ -3,10 +3,15 @@ module.exports = {
   darkMode: 'class',
   theme: {
     fontFamily: {
-      /* sans: ["ui-sans-serif", "system-ui"], */
       kaushan: ["Kaushan Script"],
       lato: ["Lato"],
     },
+
+    boxShadow:{
+      'custom-light': "0 0 10px #3C3838, 0 0 10px #444141",
+      'custom-dark': "0px 0px 10px #2E3841, 0px 0px 10px #EFF1F8"
+    },
+
     extend: {
       /* custome colores */
       colors: {
@@ -34,7 +39,9 @@ module.exports = {
     },
   },
   variants: {
-    extend: {},
+    extend: {
+      boxShadow:["dark"],
+    },
   },
   plugins: [],
 };
