@@ -19,6 +19,8 @@ export interface Project {
 	image_path: string;
 	deploy_ur: string;
 	github_url: string;
-	category: string[];
+	category: Category[];
 	key_techs: string[];
 }
+
+export type Category = "react"| "node" | "express" | "vue" | "angular" | "next js" | "mongo DB";
