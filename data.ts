@@ -189,7 +189,7 @@ export const projects: Project[] = [
 		deployed_url: "https://miryambathildecrevillen.es/smart-agency/",
 		github_url: "https://github.com/miryambathilde/smart-agency",
 		category: ["bootstrap"],
-		key_techs: ["Html", "CSS", "Bootstrap"],
+		key_techs: ["HTML", "CSS", "Bootstrap"],
 	},
 
 	{
@@ -208,8 +208,8 @@ export const projects: Project[] = [
 		image_path: "images/landing-page-html-css.png",
 		deployed_url: "https://miryambathildecrevillen.es/landing-page-website/",
 		github_url: "https://github.com/miryambathilde/Landing-Page-HTML-CSS",
-		category: ["html", "css"],
-		key_techs: ["Html", "CSS"],
+		category: [],
+		key_techs: ["HTML", "CSS"],
 	},
 	{
 		name: "Data Cloud",
@@ -220,7 +220,7 @@ export const projects: Project[] = [
 			"https://miryambathildecrevillen.es/data-cloud-hosting-website/index.html",
 		github_url:
 			"https://github.com/miryambathilde/cloud-data-project-html-css-flex-grid-animations",
-		category: ["html", "css"],
-		key_techs: ["Html", "CSS", "Flexbox", "Grid", "Animations"],
+		category: [],
+		key_techs: ["HTML", "CSS", "Flexbox", "Grid", "Animations"],
 	},
 ];

@@ -23,4 +23,4 @@ export interface Project {
 	key_techs: string[];
 }
 
-export type Category = "react" | "node" | "express" | "vue" | "angular" | "next js" | "mongo DB" | "bootstrap" | "tailwind CSS" | "sass" | "web pack" | "html" | "css";
+export type Category = "react" | "node" | "express" | "vue" | "angular" | "next" | "mongo" | "bootstrap" | "tailwind" | "sass";
