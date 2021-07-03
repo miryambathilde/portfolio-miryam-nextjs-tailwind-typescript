@@ -1,15 +1,17 @@
+import React from "react";
+import ProjectCard from "../components/ProjectCard";
 import { projects } from "../data";
 
 const Projects = () => {
 	return <div className='p-4'>
 
-		<nav>Navbar</nav>
+		<nav className="dark:text-white">Navbar</nav>
 
-		<div>
+		<div className="grid grid-cols-12 gap-4 my-3 dark:text-gray-100">
 			{
 				projects.map(project=> (
-					<div>
-						<ProjectCard/>
+					<div className="col-span-12 p-2 sm:col-span-6 lg:col-span-4 dark:text-gray-100">
+						<ProjectCard project={project} key={project.name}/>
 					</div>
 				))
 			}

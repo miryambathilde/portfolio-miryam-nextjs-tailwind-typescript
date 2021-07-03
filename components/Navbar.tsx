@@ -24,7 +24,7 @@ const Navbar = () => {
 	const { pathname } = useRouter();
 
 	useEffect(() => {
-		if (pathname === "/") setActiveItem("Sobre mí");
+		if (pathname === "/") setActiveItem("Perfil");
 		if (pathname === "/projects") setActiveItem("Proyectos");
 		if (pathname === "/resume") setActiveItem("Experiencia");
 	}, []);
@@ -35,7 +35,7 @@ const Navbar = () => {
 				<NavItem
 					activeItem={activeItem}
 					setActiveItem={setActiveItem}
-					name='Sobre mí'
+					name='Perfil'
 					route='/'
 				/>
 				<NavItem
