@@ -17,10 +17,10 @@ export interface Project {
 	name: string;
 	description: string;
 	image_path: string;
-	deploy_ur: string;
+	deployed_url: string;
 	github_url: string;
 	category: Category[];
 	key_techs: string[];
 }
 
-export type Category = "react"| "node" | "express" | "vue" | "angular" | "next js" | "mongo DB";
+export type Category = "react" | "node" | "express" | "vue" | "angular" | "next js" | "mongo DB" | "bootstrap" | "tailwind CSS" | "sass" | "web pack" | "html" | "css";

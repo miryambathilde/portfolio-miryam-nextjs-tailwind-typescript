@@ -1,6 +1,6 @@
 import { RiComputerLine } from "react-icons/ri";
 import { FaDatabase, FaJenkins, FaServer } from "react-icons/fa";
-import { Service, Skill } from "./type";
+import { Project, Service, Skill } from "./type";
 import { AiOutlineApi, AiOutlineAntDesign } from "react-icons/ai";
 import {SiHtml5, SiCss3, SiSass, SiJavascript, SiTypescript, SiVueDotJs, SiReact, SiAngular, SiMysql, SiMongodb, SiNodeDotJs, SiBootstrap, SiTailwindcss, SiNextDotJs, SiGithub, SiGit, SiJenkins, SiDocker, SiKubernetes} from "react-icons/si";
 import {GrMysql} from 'react-icons/gr';
@@ -165,63 +165,59 @@ export const tools: Skill[] = [
 
 /* TODO  */
 /* PROJECTS */
-//export const projects: IProject[] = [
- /*  {
-   name: "Algorithm Visualizer",
-   image_path: "/images/algoVisual.png",
-   deployed_url: "https://visual-algorithm.web.app/",
-   github_url: "https://github.com/Dey-Sumit/algorithm-visualizer",
-   category: ["react"],
+export const projects: Project[] = [
+ {
+   name: "Smart Agency",
    description:
-     "An web app which shows how an algorithm (path finding or sorting) works with cool animation",
-    key_techs: ["React", "firebase", "Framer Motion"],
+     "Pagina web para agencia de diseño web",
+   image_path: "/images/smart-agency.png",
+   deployed_url: "https://miryambathildecrevillen.es/smart-agency/",
+   github_url: "https://github.com/miryambathilde/smart-agency",
+   category: ["bootstrap"],
+    key_techs: ["Html", "CSS", "Bootstrap"],
   },
- */
-  /* {
-    name: "Dev Talks",
-    image_path: "/images/dev.jpg",
-    deployed_url: "https://dev-talks.herokuapp.com/",
-    github_url: "https://github.com/Dey-Sumit/Dev-talks",
-    category: ["node", "mongo", "react"],
+
+  {
+    name: "PixelShop",
     description:
-      "Social Media app for developers who can share project,create posts,etc...",
+      "Tienda online de cursos para desarrolladores web",
+    image_path: "/images/pixelshop.png",
+    deployed_url: "https://miryambathildecrevillen.es/pixelshop/dist/",
+    github_url: "https://github.com/miryambathilde/pixelshop",
+    category: ["node", "angular", "bootstrap"],
     key_techs: [
-      "React",
-      "Redux",
+      "Angular",
+      "Bootstrap",
       "Node",
-      "Express",
-      "Mongo",
-      "REST API",
-      "Bootstrap",
     ],
-  }, */
-
- /*  {
-    name: "Realtime Chat App",
-    image_path: "/images/chatapp.jpg",
-    deployed_url: "https://sumit-chat.netlify.app/",
-    github_url: "https://github.com/Dey-Sumit/chat-app-socket.io-react-node",
-    category: ["node", "react"],
+  },
+  {
+    name: "Landing page",
     description:
-      "Basic Realtime Chat App where one can create a room can talk to each other",
-    key_techs: ["React", "Node", "Express", "Socket", "Bootstrap"],
-  }, */
-
-  /* {
-    name: "YouTube using YouTube ",
-    image_path: "/images/youtubeClone.png",
-    deployed_url: "https://not-utube.web.app/",
-    github_url: "https://github.com/Dey-Sumit/youtube-clone-tutorial-up",
-    category: ["express"],
-    description:
-      'Full(almost) Functional YouTube replica where one can login with his/her youtube account to enjoy "not-YouTube".User can like a video,comment on a video & Much More ',
+      "Práctica de Landing page usando HTML, CSS y diseño responsive.",
+    image_path: "./public/images/landing-page-html-css.png",
+    deployed_url: "https://miryambathildecrevillen.es/landing-page-website/",
+    github_url: "https://github.com/miryambathilde/Landing-Page-HTML-CSS",
+    category: ["html", "css"],
     key_techs: [
-      "React",
-      "Redux",
-      "Firebase Auth",
-      "YouTube API",
-      "Sass",
-      "Bootstrap",
+      "Html",
+      "CSS",
     ],
-  }, */
-//];
+  },
+  {
+    name: "Data Cloud",
+    description:
+      "Práctica de Landing page usando HTML, CSS con animaciones, flexbox, grid y diseño responsive.",
+    image_path: "/images/data-cloud.png",
+    deployed_url: "https://miryambathildecrevillen.es/data-cloud-hosting-website/index.html",
+    github_url: "https://github.com/miryambathilde/cloud-data-project-html-css-flex-grid-animations",
+    category: ["html", "css"],
+    key_techs: [
+      "Html",
+      "CSS",
+      "Flexbox",
+      "Grid",
+      "Animaciones",
+    ],
+  },
+];
