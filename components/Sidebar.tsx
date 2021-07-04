@@ -16,8 +16,13 @@ const Sidebar = () => {
 			<img
 				src='https://avatars.githubusercontent.com/u/72916496?v=4'
 				alt='user avatar'
-				className='w-40 h-40 mx-auto rounded-full'
+				className='w-40 h-40 mx-auto border border-green-200 rounded-full dark:border-gray-400'
 			/>
+			{/* <img
+				src='https://avatars.githubusercontent.com/u/72916496?v=4'
+				alt='user avatar'
+				className='w-40 h-40 mx-auto rounded-full'
+			/> */}
 			<h3 className='my-4 text-3xl italic font-medium font-style: font-lato'>
 				<span className='text-green-500 dark:text-green-400'>Miryam</span>
 				<br />

@@ -185,7 +185,7 @@ export const projects: Project[] = [
 	{
 		name: "Smart Agency",
 		description: "Pagina web para agencia de diseño web",
-		image_path: "images/smart-agency.png",
+		image_path: "/images/smart-agency.png",
 		deployed_url: "https://miryambathildecrevillen.es/smart-agency/",
 		github_url: "https://github.com/miryambathilde/smart-agency",
 		category: ["bootstrap"],
@@ -205,7 +205,7 @@ export const projects: Project[] = [
 		name: "Landing page",
 		description:
 			"Práctica de Landing page usando HTML, CSS y diseño responsive.",
-		image_path: "images/landing-page-html-css.png",
+		image_path: "/images/landing-page-html-css.png",
 		deployed_url: "https://miryambathildecrevillen.es/landing-page-website/",
 		github_url: "https://github.com/miryambathilde/Landing-Page-HTML-CSS",
 		category: [],
