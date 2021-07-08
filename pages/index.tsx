@@ -47,7 +47,7 @@ const About = () => {
 			</div>
 
 			{/* languages and tools */}
-
+			
 			<div className='grid gap-6 md:grid-cols-2'>
 				<div>
 					<h5 className='my-3 text-2xl font-bold text-gray-800 dark:text-gray-100'>

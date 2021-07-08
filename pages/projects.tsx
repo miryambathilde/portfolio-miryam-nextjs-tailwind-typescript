@@ -10,6 +10,9 @@ const Projects = () => {
 	const [projects, setProjects] = useState(projectsData);
 	const [active, setActive] = useState("all");
 
+	/* ventana para mostrar detalle se inicia por el id o vacio, aunque por defecto se inicia vacío*/
+	const [showDetail, setShowDetail] = useState<number | null>(null);
+
 	const handlerFilterCategory = (category: Category | "all") => {
 		if (category === "all") {
 			setProjects(projectsData);
@@ -44,7 +47,11 @@ const Projects = () => {
 						className='col-span-12 p-2 bg-gray-200 rounded-lg sm:col-span-6 lg:col-span-4 dark:bg-gray-500 dark:text-gray-200'
 						variants={fadeInUp}
 						key={project.id}>
-						<ProjectCard project={project} key={project.id} />
+						<ProjectCard
+							project={project}
+							showDetail={showDetail}
+							setShowDetail={setShowDetail}
+						/>
 					</motion.div>
 				))}
 			</motion.div>

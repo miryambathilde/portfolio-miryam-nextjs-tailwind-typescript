@@ -8,3 +8,22 @@ body {
   font-family: sans-serif;
   color:#354358;
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 0px;
+  /* height 0:  hide the horizontal scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(to right bottom, #17cf60, #0f78e0);
+}
+
+@layer utilities {
+  .scrollbar-hide {
+     ::-webkit-scrollbar {
+        width: 0 !important;
+     }
+     overflow: -moz-scrollbars-none;
+  }
+}

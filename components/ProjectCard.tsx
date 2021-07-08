@@ -5,8 +5,7 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { stagger, fadeInUp } from "../animations";
 
-
-const animation = {
+/* const animation = {
 	hidden: {
 		opacity: 0,
 	},
@@ -17,11 +16,14 @@ const animation = {
 		},
 	},
 };
-
+ */
 const ProjectCard: FunctionComponent<{
 	project: Project;
+	showDetail: null | number;
+	setShowDetail: (id: null | number) => void;
 }> = ({
 	project: {
+		id,
 		name,
 		description,
 		image_path,
@@ -30,16 +32,16 @@ const ProjectCard: FunctionComponent<{
 		category,
 		key_points,
 	},
+	showDetail,
+	setShowDetail,
 }) => {
-	/* ventana para mostrar detalle por defecto se inicia en false */
-	const [showDetail, setShowDetail] = useState(false);
 	return (
 		<motion.div>
 			<Image
 				src={image_path}
 				alt={name}
 				className='cursor-pointer'
-				onClick={() => setShowDetail(true)}
+				onClick={() => setShowDetail(id)}
 				layout='responsive'
 				height={150}
 				width={300}
@@ -48,13 +50,12 @@ const ProjectCard: FunctionComponent<{
 			{/* <img src={image_path} alt={name} className='cursor-pointer' onClick={()=>setShowDetail(true)}/> */}
 			<p className='my-2 text-center dark:text-gray-100'>{name}</p>
 			<AnimatePresence>
-				{showDetail && (
+				{showDetail === id && (
 					<motion.div
 						className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-gray-800 bg-gray-200 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-gray-500'
 						variants={stagger}
 						initial='initial'
-						animate='animate'
-						>
+						animate='animate'>
 						<motion.div variants={fadeInUp}>
 							<motion.div
 								className='border-4 border-gray-100 '
@@ -109,8 +110,8 @@ const ProjectCard: FunctionComponent<{
 						</motion.div>
 
 						<button
-							className='absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-gray-500'
-							onClick={() => setShowDetail(false)}>
+							onClick={() => setShowDetail(null)}
+							className='absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-gray-500'>
 							<AiFillCloseCircle size={30} />
 						</button>
 					</motion.div>

@@ -10,7 +10,7 @@ const Bar: FunctionComponent<{
 	return (
 		<div className='my-2 font-bold text-white bg-gray-400 rounded-full dark:bg-gray-50'>
 			<motion.div
-				className='flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green-600 via-green-400 to-blue-400'
+				className='flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green-600 via-green-500 to-blue-400'
 				style={{ 
 					width: level,
 					backgroundImage: 'linear-gradient(90deg,#28CB68,#0575e6)',
