@@ -9,10 +9,10 @@ const Bar: FunctionComponent<{
 
 	const variants = {
 		initial: {
-			with: 0
+			with: 0,
 		},
 		animate: {
-			width:bar_width,
+			width: bar_width,
 			transition: {
 				duration: 0.4,
 			},
@@ -21,7 +21,7 @@ const Bar: FunctionComponent<{
 	return (
 		<div className='my-2 font-bold text-white bg-gray-400 rounded-full dark:bg-gray-50'>
 			<motion.div
-				className='flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green-600 via-green-400 to-blue-500 dark:from-green-600 dark:via-green-400 dark:to-blue-400'
+				className='flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green-600 via-green-400 to-blue-400'
 				style={{ 
 					width: bar_width 
 				}}
