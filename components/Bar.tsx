@@ -5,31 +5,32 @@ import { motion } from "framer-motion";
 const Bar: FunctionComponent<{
 	data: Skill;
 }> = ({ data: { Icon, level, name } }) => {
-	const bar_width = `${level}%`
+	/* const bar_width = `${level}%` */
 
-	const variants = {
-		initial: {
-			with: 0,
-		},
-		animate: {
-			width: bar_width,
-			transition: {
-				duration: 0.4,
-			},
-		},
-	}
 	return (
 		<div className='my-2 font-bold text-white bg-gray-400 rounded-full dark:bg-gray-50'>
 			<motion.div
 				className='flex items-center px-4 py-1 rounded-full bg-gradient-to-r from-green-600 via-green-400 to-blue-400'
 				style={{ 
-					width: bar_width 
+					width: level,
+					backgroundImage: 'linear-gradient(90deg,#28CB68,#0575e6)',
 				}}
-				variants={variants}
-				initial="initial"
-				animate="animate"
-				>
-					
+				variants={{
+					initial: {
+						 width: 0,
+					},
+					animate: {
+						 width: level,
+						 transition: {
+								duration: 0.5,
+								type: 'spring',
+								damping: 10,
+								stiffness: 100,
+						 },
+					},
+			 }}
+			 animate='animate'
+			 initial='initial'>
 				<Icon className='mr-3' />
 				{name}
 			</motion.div>

@@ -1,17 +1,24 @@
-import Bar from "../components/Bar";
-import { languages, tools } from "../data";
+import { fadeInUp, pageAnimation } from "../animations";
+import { motion } from "framer-motion";
 
-const resume = () => {
+const Resume = () => {
 	return (
-		<div className='px-6 py-2 bg-gray-200 dark:bg-gray-700'>
+		<motion.div
+			className='px-6 py-2 bg-gray-200 dark:bg-gray-700'
+			variants={pageAnimation}
+			initial='hidden'
+			animate='visible'
+			exit='exit'>
 			{/* //education & experience// */}
 			<div className='grid gap-10 md:grid-cols-2 xl:grid-cols-2'>
-				<div>
+				<motion.div variants={fadeInUp} initial='initial' animate='animate'>
 					<h3 className='text-2xl font-bold text-gray-800 dark:text-white my-7'>
 						Estudios
 					</h3>
 					<div>
-						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>Codehouse Academy (2021)</h5>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>
+							Codehouse Academy (2021)
+						</h5>
 						<p className='font-semibold dark:text-gray-300'>
 							Bootcamp Full Stack Web Developer: Opensource
 						</p>
@@ -26,7 +33,9 @@ const resume = () => {
 						</p>
 					</div>
 					<div>
-						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>Pixelpro (2020 - 2021)</h5>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>
+							Pixelpro (2020 - 2021)
+						</h5>
 						<p className='font-semibold dark:text-gray-300'>
 							Estudiante carrera FullStack Developer
 						</p>
@@ -66,13 +75,15 @@ const resume = () => {
 							comunicación productiva, la colaboración y la negociación.
 						</p>
 					</div>
-				</div>
-				<div>
+				</motion.div>
+				<motion.div variants={fadeInUp} initial='initial' animate='animate'>
 					<h4 className='text-2xl font-bold text-gray-800 dark:text-white my-7'>
 						Experiencia profesional
 					</h4>
 					<div>
-						<h5 className='my-2 text-xl font-bold text-justify dark:text-gray-300'>Codehouse Academy (2021)</h5>
+						<h5 className='my-2 text-xl font-bold text-justify dark:text-gray-300'>
+							Codehouse Academy (2021)
+						</h5>
 						<p className='font-semibold text-justify dark:text-gray-300'>
 							Presentación del proyecto final de Bootcamp
 						</p>
@@ -87,7 +98,9 @@ const resume = () => {
 						</p>
 					</div>
 					<div>
-						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>Pixelpro (2020 - 2021)</h5>
+						<h5 className='my-2 text-xl font-bold dark:text-gray-300'>
+							Pixelpro (2020 - 2021)
+						</h5>
 						<p className='font-semibold text-justify dark:text-gray-300'>
 							Estudiante carrera FullStack Developer
 						</p>
@@ -96,32 +109,10 @@ const resume = () => {
 							Angular con NodeJS.
 						</p>
 					</div>
-				</div>
+				</motion.div>
 			</div>
-			{/* languages and tools */}
-
-			<div className='grid gap-6 md:grid-cols-2'>
-				<div>
-					<h5 className='my-3 text-2xl font-bold text-gray-800 dark:text-gray-100'>Lenguajes</h5>
-					<div className='my-4'>
-						{languages.map((language) => (
-							<Bar data={language} key={language.name} />
-						))}
-					</div>
-				</div>
-				<div>
-					<h5 className='my-3 text-2xl font-bold text-gray-800 dark:text-gray-100'>
-						Herramientas & Frameworks
-					</h5>
-					<div className='my-4 dark:text-gray-100'>
-						{tools.map((tool) => (
-							<Bar data={tool} key={tool.name}/>
-						))}
-					</div>
-				</div>
-			</div>
-		</div>
+		</motion.div>
 	);
 };
 
-export default resume;
+export default Resume;

@@ -183,25 +183,28 @@ export const tools: Skill[] = [
 /* PROJECTS */
 export const projects: Project[] = [
 	{
+		id: 1,
 		name: "Smart Agency",
 		description: "Pagina web para agencia de diseño web",
 		image_path: "/images/smart-agency.png",
 		deployed_url: "https://miryambathildecrevillen.es/smart-agency/",
 		github_url: "https://github.com/miryambathilde/smart-agency",
 		category: ["bootstrap"],
-		key_techs: ["HTML", "CSS", "Bootstrap"],
+		key_points: ["HTML", "CSS", "Bootstrap"],
 	},
 
 	{
+		id: 2,
 		name: "PixelShop",
 		description: "Tienda online de cursos para desarrolladores web",
 		image_path: "/images/pixelshop.png",
 		deployed_url: "https://miryambathildecrevillen.es/pixelshop/dist/",
 		github_url: "https://github.com/miryambathilde/pixelshop",
 		category: ["node", "angular", "bootstrap"],
-		key_techs: ["Angular", "Bootstrap", "Node"],
+		key_points: ["Angular", "Bootstrap", "Node"],
 	},
 	{
+		id: 3,
 		name: "Landing page",
 		description:
 			"Práctica de Landing page usando HTML, CSS y diseño responsive.",
@@ -209,9 +212,10 @@ export const projects: Project[] = [
 		deployed_url: "https://miryambathildecrevillen.es/landing-page-website/",
 		github_url: "https://github.com/miryambathilde/Landing-Page-HTML-CSS",
 		category: [],
-		key_techs: ["HTML", "CSS"],
+		key_points: ["HTML", "CSS"],
 	},
 	{
+		id: 4,
 		name: "Data Cloud",
 		description:
 			"Práctica de Landing page usando HTML, CSS con animaciones, flexbox, grid y diseño responsive.",
@@ -221,6 +225,8 @@ export const projects: Project[] = [
 		github_url:
 			"https://github.com/miryambathilde/cloud-data-project-html-css-flex-grid-animations",
 		category: [],
-		key_techs: ["HTML", "CSS", "Flexbox", "Grid", "Animations"],
+		key_points: ["HTML", "CSS", "Flexbox", "Grid", "Animations"],
 	},
 ];
+
+
