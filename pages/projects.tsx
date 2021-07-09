@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import ProjectCard from "../components/ProjectCard";
-import ProjectsNavbar from "../components/ProjectsNavbar";
 import { projects as projectsData } from "../data";
 import { Category } from "../type";
 import { motion } from "framer-motion";
@@ -12,7 +11,7 @@ const Projects = () => {
 	const [active, setActive] = useState("all");
 
 	/* ventana para mostrar detalle se inicia por el id o vacio, aunque por defecto se inicia vacío*/
-	const [showDetail, setShowDetail] = useState<number | null>(null);
+	/* const [showDetail, setShowDetail] = useState<number | null>(null); */
 
 	const handlerFilterCategory = (category: Category | "all") => {
 		if (category === "all") {
@@ -45,15 +44,15 @@ const Projects = () => {
 			<nav className='flex px-3 py-2 space-x-3 overflow-x-auto list-none dark:text-gray-50'>
             {/* //use className */}
             <li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'all' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'all' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('all')}>
                All
             </li>
             <li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'react' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'react' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                // use typescript to send value
                onClick={() => handlerFilterCategory('react')}>
@@ -61,50 +60,50 @@ const Projects = () => {
             </li>
 
             <li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'node' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'node' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('node')}>
                Node
             </li>
             <li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'express' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'express' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('express')}>
                Express{' '}
             </li> 
 						<li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'angular' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'angular' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('angular')}>
                Angular
             </li>
 						<li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'next' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'next' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('next')}>
                Next
             </li>
 						<li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'bootstrap' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'bootstrap' ? 'text-green-500 dark:text-green-400 font-bold': ''
                }`}
                onClick={() => handlerFilterCategory('bootstrap')}>
                Bootstrap
             </li>
 						<li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'tailwind' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'tailwind' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('tailwind')}>
                Tailwind
             </li>
 						<li
-               className={`cursor-pointer hover:text-green ${
-                  active === 'sass' ? 'text-green' : ''
+               className={`cursor-pointer hover:text-green-500 dark:hover:text-green-400 ${
+                  active === 'sass' ? 'text-green-500 dark:text-green-400 font-bold' : ''
                }`}
                onClick={() => handlerFilterCategory('sass')}>
                SASS
@@ -124,8 +123,9 @@ const Projects = () => {
 						key={project.id}>
 						<ProjectCard
 							project={project}
-							showDetail={showDetail}
-							setShowDetail={setShowDetail}
+							key={project.id}
+							/* showDetail={showDetail}
+							setShowDetail={setShowDetail} */
 						/>
 					</motion.div>
 				))}

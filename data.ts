@@ -184,6 +184,16 @@ export const tools: Skill[] = [
 export const projects: Project[] = [
 	{
 		id: 1,
+		name: "Portfolio fotógrafo profesional",
+		description: "Portfolio fotógrafo y editor de vídeos y fotografías",
+		image_path: "/images/portfolio-oliver.png",
+		deployed_url: "https://olivercrevillen.es/",
+		github_url: "https://github.com/miryambathilde/smart-agency",
+		category: ["bootstrap"],
+		key_points: ["HTML", "CSS", "Bootstrap", "Javascript"],
+	},
+	{
+		id: 2,
 		name: "Smart Agency",
 		description: "Pagina web para agencia de diseño web",
 		image_path: "/images/smart-agency.png",
@@ -194,7 +204,7 @@ export const projects: Project[] = [
 	},
 
 	{
-		id: 2,
+		id: 3,
 		name: "PixelShop",
 		description: "Tienda online de cursos para desarrolladores web",
 		image_path: "/images/pixelshop.png",
@@ -204,7 +214,7 @@ export const projects: Project[] = [
 		key_points: ["Angular", "Bootstrap", "Node"],
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Landing page",
 		description:
 			"Práctica de Landing page usando HTML, CSS y diseño responsive.",
@@ -215,7 +225,7 @@ export const projects: Project[] = [
 		key_points: ["HTML", "CSS"],
 	},
 	{
-		id: 4,
+		id: 5,
 		name: "Data Cloud",
 		description:
 			"Práctica de Landing page usando HTML, CSS con animaciones, flexbox, grid y diseño responsive.",

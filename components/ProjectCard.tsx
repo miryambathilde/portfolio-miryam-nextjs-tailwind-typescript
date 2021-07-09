@@ -5,22 +5,10 @@ import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import { stagger, fadeInUp } from "../animations";
 
-/* const animation = {
-	hidden: {
-		opacity: 0,
-	},
-	visible: {
-		opacity: 1,
-		transition: {
-			duration: 0.3,
-		},
-	},
-};
- */
 const ProjectCard: FunctionComponent<{
 	project: Project;
-	showDetail: null | number;
-	setShowDetail: (id: null | number) => void;
+	/* showDetail: null | number;
+	setShowDetail: (id: null | number) => void; */
 }> = ({
 	project: {
 		id,
@@ -29,19 +17,19 @@ const ProjectCard: FunctionComponent<{
 		image_path,
 		deployed_url,
 		github_url,
-		category,
 		key_points,
 	},
-	showDetail,
-	setShowDetail,
+	/* showDetail,
+	setShowDetail, */
 }) => {
+	const [showDetail, setShowDetail] = useState(false)
 	return (
 		<motion.div>
 			<Image
 				src={image_path}
 				alt={name}
 				className='cursor-pointer'
-				onClick={() => setShowDetail(id)}
+				onClick={() => setShowDetail(true)}
 				layout='responsive'
 				height={150}
 				width={300}
@@ -50,7 +38,7 @@ const ProjectCard: FunctionComponent<{
 			{/* <img src={image_path} alt={name} className='cursor-pointer' onClick={()=>setShowDetail(true)}/> */}
 			<p className='my-2 text-center dark:text-gray-100'>{name}</p>
 			<AnimatePresence>
-				{showDetail === id && (
+				{showDetail && (
 					<motion.div
 						className='absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-gray-800 bg-gray-200 md:grid-cols-2 gap-x-12 dark:text-white dark:bg-gray-500'
 						variants={stagger}
@@ -110,7 +98,7 @@ const ProjectCard: FunctionComponent<{
 						</motion.div>
 
 						<button
-							onClick={() => setShowDetail(null)}
+							onClick={() => setShowDetail(false)}
 							className='absolute p-1 bg-gray-200 rounded-full top-3 right-3 focus:outline-none dark:bg-gray-500'>
 							<AiFillCloseCircle size={30} />
 						</button>
