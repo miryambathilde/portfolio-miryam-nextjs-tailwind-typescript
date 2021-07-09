@@ -237,6 +237,19 @@ export const projects: Project[] = [
 		category: [],
 		key_points: ["HTML", "CSS", "Flexbox", "Grid", "Animations"],
 	},
+	{
+		id: 6,
+		name: "Profile Card - Light and Dark Mode",
+		description:
+			"Práctica de landing page para tarjeta de perfil con Tailwind CSS y opción de cambiar del modo claro a modo oscuro",
+		image_path: "/images/profile-card.png",
+		deployed_url:
+			"https://miryambathildecrevillen.es/profile/",
+		github_url:
+			"https://github.com/miryambathilde/profile-website-tailwind",
+		category: ["tailwind"],
+		key_points: ["HTML", "Tailwind CSS", "Flexbox", "Modo Oscuro"],
+	},
 ];
 
 

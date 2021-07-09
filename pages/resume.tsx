@@ -1,5 +1,6 @@
 import { fadeInUp, pageAnimation } from "../animations";
 import { motion } from "framer-motion";
+import Head from 'next/head';
 
 const Resume = () => {
 	return (
@@ -9,6 +10,9 @@ const Resume = () => {
 			initial='hidden'
 			animate='visible'
 			exit='exit'>
+			<Head>
+        <title>Miryam Bathilde | Web Developer | Resume</title>
+      </Head>
 			{/* //education & experience// */}
 			<div className='grid gap-10 md:grid-cols-2 xl:grid-cols-2'>
 				<motion.div variants={fadeInUp} initial='initial' animate='animate'>

@@ -6,11 +6,15 @@ import { ThemeProvider } from "next-themes";
 import { AnimatePresence } from "framer-motion";
 /* import Head from 'next/head' */
 //import 'tailwindcss/tailwind.css';
+import Head from 'next/head';
 
 function MyApp({ Component, pageProps, router }) {
 	return (
 		<ThemeProvider attribute='class'>
 			{/* //head// */}
+			<Head>
+        <title>Miryam Bathilde | Web Developer</title>
+      </Head>
 			<div className='grid grid-cols-12 gap-6 px-5 lg:px-48 my-14 sm:px-32 md:px-42'>
 				<div className='col-span-12 p-4 text-center bg-white dark:bg-gray-700 lg:col-span-3 rounded-2xl shadow-custom-light dark:shadow-custom-dark'>
 					<Sidebar />

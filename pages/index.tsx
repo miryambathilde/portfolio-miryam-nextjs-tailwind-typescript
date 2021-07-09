@@ -16,6 +16,9 @@ const About = () => {
 			initial='hidden'
 			animate='visible'
 			exit='exit'>
+			<Head>
+        <title>Miryam Bathilde | Web Developer | About</title>
+      </Head>
 			<h5 className='my-3 font-medium'>
 				Soy Miryam, desarrolladora FullStack, apasionada y amante del diseño y
 				la maquetación web.
