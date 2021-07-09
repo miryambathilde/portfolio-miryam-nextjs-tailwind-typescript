@@ -29,7 +29,7 @@ export const services: Service[] = [
 		Icon: RiComputerLine,
 		title: "Desarrollo Frontend",
 		about:
-			"Puedo construir una SPA, Single Page Application, bonita y funcional usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b>. ",
+			"Puedo construir una SPA bonita y funcional usando <b> HTML</b>,<b>CSS</b> y <b>React, Vue o Angular</b>. ",
 	},
 	{
 		Icon: FaServer,
@@ -46,7 +46,7 @@ export const services: Service[] = [
 		Icon: AiOutlineAntDesign,
 		title: "UI/UX",
 		about:
-			"Desarrollo de interfaces gráficas de usuario, <b>accesible para personas con discapacidad, orientado al SEO</b> y totalmente <b>responsive</b>.",
+			"Desarrollo de interfaces gráficas de usuario, <b>con accesabilidad, orientación al SEO</b> y <b>responsive</b>.",
 	},
 ];
 
